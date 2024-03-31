@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    /*background-color: #e44e6c;*/
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    color: aliceblue;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.logo img {
+    margin-right: 0.5rem;
+}
+
+
+/*------------------resconsive Navbar----------------*/
+@media only screen and (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+
+/*-------------------- mypet-content -----------------*/
+
+.mypet-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box {
+    /*background-color: brown;*/
+    margin: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #61374e;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+/*------------------resconsive Mypet----------------*/
+@media only screen and (max-width: 768px) {
+    .mypet-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+
+@media only screen and (max-width: 480px) {
+    .mypet-content {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+/*-----------hero-section------------*/
+.hero {
+    background-image: url('https://kingkongpetshop.com/wp-content/uploads/2022/07/cat-licking-fur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-hero {
+    margin: 0;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.contact {
+    background-color: rgb(162, 220, 235);
+    width: auto;
+    height: 300px;
+    display: flex;
+}
+
+.circle {
+    background-color: antiquewhite;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin: auto;
+    
+}
+
+.text-icon {
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*------------------resconsive Mypet----------------*/
+/*------------------resconsive Mypet----------------*/
+@media only screen and (max-width: 1050px) {
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: auto;
+        max-width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        max-width: 100%;
+
+    }
+  }
+
+
+@media only screen and (max-width: 480px) {
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        max-width: 100%;
+    }
+  }
+
+
+  
+/*-----------hero-section------------*/
+
+/*-----------------Start footer---------------*/
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+/*------------------End footer-----------------*/
